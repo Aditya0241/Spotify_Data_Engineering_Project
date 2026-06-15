@@ -22,7 +22,7 @@ The pipeline follows the **ETL (Extract, Transform, Load) process**, as illustra
 
 ### **2. Transformation Phase**  
 - **AWS Lambda (Data Transformation):**  
-  - A second Lambda function (`spotify_data_transform`) is triggered when new raw data is added to S3.  
+  - A second Lambda function (`spotify_transformtion_load`) is triggered when new raw data is added to S3.  
   - It processes the raw JSON, extracts key fields (e.g., song name, artist, album, popularity), and converts them into **structured CSV files**.  
   - The transformed data is stored in a separate **S3 bucket (`transformed_data`)**.  
 
